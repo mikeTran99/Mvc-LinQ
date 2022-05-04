@@ -1,0 +1,45 @@
+﻿@model IEnumerable<banAoCuoi.Models.SACH>
+
+@{
+    ViewBag.Title = "Sản phẩm theo loại";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<style>
+    #textshadow{
+                    text-shadow: 5px 2px 4px grey, 10px -20px 4px orange;
+    }
+    #giaban{
+            padding-bottom:2em;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkblue;
+    }
+     body{
+              background-image:url('../../images/bgchung.png');
+              position: relative;
+    }
+</style>
+<body>
+    <center>
+        <h3 id="giaban" style="text-align:center;color:red; padding-bottom:2em">SẢN PHẨM THEO LOẠI</h3>
+        <div class="row" style="background-color:transparent">
+            @foreach (var sach in Model)
+            {
+                <div class="col-sm-3 col-lg-3 col-md-3">
+                    <div class="thumbnail" style="width:75%">
+                        <a href="@Url.Action("Details", "BookStore", new { id = sach.Masach })">
+                            <img style="filter: drop-shadow(0 0 5px blue); border-radius: 10px; height:160px" alt="@sach.Tensach" src="~/images/@sach.Anhbia" />
+                        </a>
+                        <div>
+                            <br />
+                            <h4 id="textshadow">@sach.Tensach</h4>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </center>
+
+</body>
+
+

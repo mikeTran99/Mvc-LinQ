@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Thông Tin Liên Hệ";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<style>
+    #h2 {
+        color: orange;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .td {
+        padding:0.5em;
+        font-size:large;
+        color:red;
+        font:bolder;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    }
+    .giaban{
+            color: gold;
+            text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 5px darkblue;
+        }
+    
+      body {
+      background-image:url('../../images/bgLienHe.jpg');
+      position: relative;
+    }
+      .avatar{
+          
+          width:5em;
+          height:5em;
+          border-radius:10px;
+      }
+      tr{
+          margin-top:3em;
+          width:0.8em;
+          padding-top:2em;
+      }
+</style>
+
+
+<body>
+    <center>
+        <h2 id="h2" style="text-align:center">Thông Tin Liên Hệ</h2>
+        <table style="margin-top:2em; ">
+            <tr>
+                <td class="td"><strong>Trần Lê Minh Trung:</strong>  </td>
+                <td style="width:0.5em"> <img class="avatar" alt="" src="~/images/tlmt.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="td"><b>Phone: </b></td>
+                <td class="giaban"><b>0788962643 </b></td>
+            </tr>
+            <tr>
+                <td class="td"><b>Gmail: </b></td>
+                <td class="giaban"><b>tlmtrung.ntt.it@gmail.com </b></td>
+            </tr>
+            <tr>
+                <td class="td"><b>Địa Chỉ:</b> </td>
+                <td style="margin-top:1em;"><iframe style="height:300px;width:420px;filter: drop-shadow(0 0 5px blue); border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.1826014986088!2d106.69352935730382!3d10.859802888398404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529c17978287d%3A0xec48f5a17b7d5741!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOZ3V54buFbiBU4bqldCBUaMOgbmggLSBDxqEgc-G7nyBxdeG6rW4gMTI!5e0!3m2!1svi!2s!4v1600856150273!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </td>
+            </tr>
+
+        </table>
+    </center>
+   
+</body>
+
+

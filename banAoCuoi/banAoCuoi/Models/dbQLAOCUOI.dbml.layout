@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.75" name="dbQLAOCUOI">
+  <DataContextMoniker Name="/dbQLAOCUOIDataContext" />
+  <nestedChildShapes>
+    <classShape Id="924e2acc-e188-4e48-97a9-ad0383f240c2" absoluteBounds="6.25, 1.375, 2, 1.8429427470763524">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/CHITIETDONTHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e144ba95-95c3-4698-af2c-5f72122d844c" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.2829427470763524" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e541d77d-b06e-4783-a73b-3bde9a8c15e8" absoluteBounds="3.5, 1, 2, 2.6564844375848766">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/SACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e9358e6-d83b-4088-9db4-e9af87a0c79f" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.096484437584877" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5fa99d3-2f9b-48f1-b38b-a89509c9d301" absoluteBounds="0.75, 1.625, 2, 1.2327864791949592">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/CHUDE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c87120b-7fff-425a-883c-1fc0e358029f" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.67278647919495893" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ae090ca-d642-421a-83e6-08f90e29b5e6" absoluteBounds="3.5, 8.25, 2, 2.0463281697034823">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/DONDATHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4b79706-e87a-4b6e-8fc8-7cf047bfac60" absoluteBounds="3.515, 8.71, 1.9700000000000002, 1.4863281697034836" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fd27a07-f26d-45a1-a584-ea706c1d5126" absoluteBounds="0.75, 8, 2, 2.453099014957747">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5e971bc-92aa-4817-86f1-b06bd89842e2" absoluteBounds="0.765, 8.46, 1.9700000000000002, 1.893099014957746" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b24d235d-1112-42e0-bfa3-670a15c71ad3" absoluteBounds="0.75, 5.5, 2, 1.6395573244492212">
+      <DataClassMoniker Name="/dbQLAOCUOIDataContext/NHAXUATBAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f88bc6f-5529-4b58-814d-d05f9ad96fb6" absoluteBounds="0.765, 5.96, 1.9700000000000002, 1.0795573244492212" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.29647137353818); (6.25 : 2.29647137353818)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLAOCUOIDataContext/SACH/SACH_CHITIETDONTHANG" />
+      <nodes>
+        <classShapeMoniker Id="e541d77d-b06e-4783-a73b-3bde9a8c15e8" />
+        <classShapeMoniker Id="924e2acc-e188-4e48-97a9-ad0383f240c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.24139323959748); (3.5 : 2.24139323959748)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLAOCUOIDataContext/CHUDE/CHUDE_SACH" />
+      <nodes>
+        <classShapeMoniker Id="b5fa99d3-2f9b-48f1-b38b-a89509c9d301" />
+        <classShapeMoniker Id="e541d77d-b06e-4783-a73b-3bde9a8c15e8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.27316408485174); (7.25 : 9.27316408485174); (7.25 : 3.21794274707635)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLAOCUOIDataContext/DONDATHANG/DONDATHANG_CHITIETDONTHANG" />
+      <nodes>
+        <classShapeMoniker Id="0ae090ca-d642-421a-83e6-08f90e29b5e6" />
+        <classShapeMoniker Id="924e2acc-e188-4e48-97a9-ad0383f240c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.27316408485174); (3.5 : 9.27316408485174)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLAOCUOIDataContext/KHACHHANG/KHACHHANG_DONDATHANG" />
+      <nodes>
+        <classShapeMoniker Id="1fd27a07-f26d-45a1-a584-ea706c1d5126" />
+        <classShapeMoniker Id="0ae090ca-d642-421a-83e6-08f90e29b5e6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.31977866222461); (4.5 : 6.31977866222461); (4.5 : 3.65648443758488)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLAOCUOIDataContext/NHAXUATBAN/NHAXUATBAN_SACH" />
+      <nodes>
+        <classShapeMoniker Id="b24d235d-1112-42e0-bfa3-670a15c71ad3" />
+        <classShapeMoniker Id="e541d77d-b06e-4783-a73b-3bde9a8c15e8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

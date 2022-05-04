@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Đăng Nhập";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<style>
+     #giaban{
+            color: blue;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px orange;
+    }
+     #textsd{
+         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+     }
+     .box{
+         border-radius:15px; 
+     }
+     body{
+              background-image:url('../../images/bgchung.png');
+              position: relative;
+    }
+</style>
+<div>
+    <h4 style="color:red;text-align:center">@ViewBag.Thongbao</h4>
+    <table id="giaban" align="center" style="background-color:transparent;">
+        <h3 id="textsd" style="text-align:center;color:red">ĐĂNG NHẬP</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            <tr style="height:40px;padding-top:3em">
+                <td>Tên đăng nhập:</td>
+                <td class="box">
+                    @Html.TextBox("TenDN")
+                    @ViewData["Loi1"]
+                </td>
+            </tr>
+            <tr style="height:40px">
+                <td>Mật khẩu:</td>
+                <td class="box">
+                    @Html.Password("Matkhau")
+                    @ViewData["Loi2"]
+                </td>
+            </tr>
+            <tr style="height:40px">
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng nhập" />
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+

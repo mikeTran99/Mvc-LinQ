@@ -1,0 +1,68 @@
+﻿<style type="text/css">
+    #Datmua a {
+        clear: both;
+        color: white;
+        display: block;
+        padding-top: 10px;
+        background-color:cornflowerblue;
+        width: 120px;
+        font-weight: bold;
+        height: 35px;
+        text-decoration: none;
+        text-align: center;
+        border-radius:10px;
+    }
+
+        #Datmua a:hover {
+            background-color: gray;
+            color: red;
+        }
+        img {
+             filter: drop-shadow(0 0 5px blue);
+             border-radius:10px;
+        }
+        #text-shadow{
+             text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+        }
+        .giaban{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkblue;
+        }
+         body {
+              font-family: 'Roboto', sans-serif;
+              background-image: url('../../images/bgchung.png');
+              margin:0;
+              position: relative;
+    }
+</style>
+@{
+    ViewBag.Title = "Thông tin chi tiết";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<body>
+    <h2 style="color:red; text-align:center">THÔNG TIN CHI TIẾT SẢN PHẨM</h2>
+    <div style="background-color:transparent">
+        <div style="width:20%;float:left;border-left:dotted 1px;border-color:azure">
+            <img src="~/images/@Model.Anhbia" width="90%" />
+        </div>
+        <div style="width:80%;float:left;padding:10px">
+            <h3 style="font-weight:bold;color:aqua">Tên Áo Cưới: @Model.Tensach </h3>
+            <p id="text-shadow" style="text-align: justify; color: dimgray;background-color:transparent"><span style="font-weight:bold">Mô tả: </span>@Model.Mota</p>
+            <p class="giaban" style="font-weight: bold; font-size: 16pt"><span>Giá bán: </span>@Model.Giaban VNĐ</p>
+        </div>
+        <div>
+            <center>
+                <div id="Datmua">
+                    <a href="@Url.Action("ThemGiohang", "GioHang", new { @iMasach = @Model.Masach, @strURL = Request.Url.ToString() })">
+                        Đặt Mua
+                    </a>
+
+                </div>
+
+            </center>
+        </div>
+    </div>
+
+</body>
+
+
